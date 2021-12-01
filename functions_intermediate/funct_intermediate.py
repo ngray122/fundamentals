@@ -80,3 +80,12 @@ def print_info(some_dict):
 
 
 print_info(dojo)
+def printInfo(some_dict):
+    for item in some_dict:
+        num_locations = len(some_dict[item])
+        print(f"\nThere are {num_locations} {item}\n")
+        for value in some_dict[item]:
+            print(value)
+        
+
+printInfo(dojo)
